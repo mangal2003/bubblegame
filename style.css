@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#playground {
+  height: 80%;
+  width: 80%;
+  background-color: transparent;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#playgroundTop {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(83, 92, 83);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#playgroundTop .parts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#playgroundTop .parts .num {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-weight: 800;
+}
+
+.bubble {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  border: 1px solid #7e9eb3;
+}
+
+.bubble:hover {
+  cursor: pointer;
+  background-color: cornsilk;
+  scale: 1.1;
+}
+
+#playgroundBtm {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#start {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+#btns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20vh;
+}
+
+#btns button {
+  padding: 1.5vh 6vw;
+  background-color: #a17fd0;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+#btns button:hover {
+  cursor: pointer;
+  border: 2px solid #7e9eb3;
+}
+
+#back {
+  padding: 1.5vh 6vw;
+  background-color: #a17fd0;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+#back:hover {
+  cursor: pointer;
+  border: 2px solid #7e9eb3;
+}
+
+#changeTheme {
+  background-color: #ba96d2;
+  height: 100vh;
+  width: 100vw;
+  padding: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.alltheme {
+  margin: 2vh 2vw;
+  padding: 1.2vh 2vw;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.alltheme:hover {
+  cursor: pointer;
+}
+
+#green {
+  color: rgb(0, 0, 0);
+  background-color: rgb(92, 219, 92);
+}
+
+#volcano {
+  color: #fff;
+  background: linear-gradient(to right bottom, yellow, orange, red);
+}
+
+#hacker {
+  color: rgb(0, 255, 0);
+  background-color: #222;
+}
+
+#indian {
+  color: rgb(0, 0, 255);
+  background: linear-gradient(rgb(255, 166, 0), #fff, rgb(11, 192, 11));
+}
